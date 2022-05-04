@@ -45,6 +45,69 @@ const Payment = () => {
         <div>
           <input type="email" />
         </div>
+        <div>
+          <h3>PROMOTION CODE</h3>
+        </div>
+        <div>
+          <h3>GIFT CARDS</h3>
+        </div>
+        <div>
+          <h3>PAYMENT METHOD</h3>
+          <div>
+            <input type="radio" />
+            <input type="radio" />
+          </div>
+          <div>
+            <form>
+              <div>
+                <div>
+                  <label>Name on Card</label>
+                </div>
+                <div>
+                  <input type="text" />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <label>Number</label>
+                </div>
+                <div>
+                  <input type="Number" />
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <label>Expiration Date</label>
+                </div>
+                <div>
+                  <select></select>
+                  <select></select>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <label>Security Code</label>
+                </div>
+                <div>
+                  <input type="Number" />
+                </div>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" />
+                  Save card & make default
+                </label>
+              </div>
+              <div>
+                <p>Please complete all form fields before continuing</p>
+              </div>
+              <div>
+                <button type="submit">REVIEW ORDER</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <div></div>
     </div>
