@@ -4,11 +4,11 @@ import styles from "./ProductsCard.module.css";
 import pic from "./Screenshot 2022-05-04 121215.png";
 import { addProducts } from "../redux/action";
 
-const ProductsCard = ({ id, img, title, name, subname, Price }) => {
+const ProductsCard = ({ id, img, title, name, subname, Price,type }) => {
   const dispatch = useDispatch();
 
   const addtocart = () => {
-    dispatch(addProducts(img, name, subname, Price));
+    dispatch(addProducts(img, name, subname, Price,type));
   };
   return (
     <div className={styles.innerDiv}>

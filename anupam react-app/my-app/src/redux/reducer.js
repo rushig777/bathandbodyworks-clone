@@ -1,4 +1,4 @@
-import { FILTER_DATA, GET_DATA, SORT_DATA } from "./action";
+import { FILTER_DATA, GET_DATA, SORT_DATA, CART_DATA, Delete_DATA } from "./action";
 import { ERROR_DATA } from "./action";
 import { REQUEST_DATA } from "./action";
 
@@ -7,6 +7,7 @@ const initState = {
   isLoading: false,
   isError: false,
   products: [],
+  cartProducts: [],
 };
 
 export const reducer = (state = initState, { type, payload }) => {
@@ -52,6 +53,20 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
         products: state.products.filter((e) => e.type == payload),
       };
+      case CART_DATA:
+        return{
+          ...state,
+          isLoading: false,
+          isError: false,
+          cartProducts: payload,
+        }
+        case Delete_DATA:
+          return{
+            ...state,
+            isLoading: false,
+            isError: false,
+            cartProducts: state.cartProducts.filter((e) => e.id !== payload)
+          }
     default:
       return state;
   }

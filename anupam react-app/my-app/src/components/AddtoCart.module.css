@@ -1,0 +1,33 @@
+
+.cartContainer{
+    
+    margin-left: 17%;
+}
+.qty{
+    border: none;
+    width: 50px;
+    height: 25px;
+    margin-top: px;
+}
+.qtydiv{
+    display: flex;
+    height: 25px;
+    border: 1px solid grey;
+    width: 90px;
+   
+}
+.remove{
+     background-color: white;
+    border: none;
+    cursor: pointer;
+    color: rgb(80,137,187);
+}
+.remove:hover{
+    background-color: rgba(223, 219, 219, 0.621);
+}
+.prodImg{
+    height: 100px;
+    width: 100px;
+    margin-top: 49px;
+    margin-right: 20px;
+}

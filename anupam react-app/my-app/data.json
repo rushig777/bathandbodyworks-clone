@@ -650,27 +650,5 @@
       "id": 506
     }
   ],
-  "cart": [
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf5b0edc0/crop/026242803_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit & Banana  ",
-      "subname": "Single Wick Candle",
-      "Price": 14.5,
-      "id": 1
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw627bc82a/crop/026234488_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "SunKissed Coconut",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "id": 2
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dweb71671f/crop/026234489_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Emerald Waters",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "id": 3
-    }
-  ]
+  "cart": []
 }
