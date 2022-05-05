@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import styles from "./AddtoCart.module.css";
 import { deleteProd } from "../redux/action";
+import { editData } from "../redux/action";
 
-const AddtoCart = ({img,name,subname,type,Price,id}) => {
+const AddtoCart = ({img,name,subname,type,Price,id,quantity}) => {
     const [cost, setCost] = useState(Price)
     const dispatch = useDispatch();
 
     const handleInput = (e) => {
-      let TotalPrice = Number(e.target.value)*Price;
+      let TotalPrice = (e.target.value)*Price;
       setCost(TotalPrice);
-      console.log(e.target.value)
-      console.log(TotalPrice);
+      editData(dispatch,e.target.value,id)
     }
 
     const handleremove = (e) => {
@@ -26,8 +26,8 @@ const AddtoCart = ({img,name,subname,type,Price,id}) => {
         <p>{name} ({type})</p>
         <p style={{ color: "green" }}>In Stock</p>
         <div className={styles.qtydiv}>
-          <p style={{ marginTop: "3px" }}>QTY:</p>
-          <select name="" className={styles.qty} onChange={handleInput}>
+          <p style={{ marginTop: "3px", marginLeft:"5px" }}>QTY:</p>
+          <select name="" defaultValue={quantity} className={styles.qty} onChange={handleInput}>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -44,7 +44,7 @@ const AddtoCart = ({img,name,subname,type,Price,id}) => {
       </div>
       <div style={{marginLeft:"300px"}}>
         <p>EACH ITEM</p>
-        <p>${Price}</p>
+        <p style={{fontSize:"smaller"}}>${Price}</p>
       </div>
       <div style={{marginLeft: "50px"}}>
         <p>TOTAL</p>

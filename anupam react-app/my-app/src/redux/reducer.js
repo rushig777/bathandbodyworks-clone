@@ -1,4 +1,11 @@
-import { FILTER_DATA, GET_DATA, SORT_DATA, CART_DATA, Delete_DATA } from "./action";
+import {
+  FILTER_DATA,
+  GET_DATA,
+  SORT_DATA,
+  CART_DATA,
+  Delete_DATA,
+  EDIT_DATA,
+} from "./action";
 import { ERROR_DATA } from "./action";
 import { REQUEST_DATA } from "./action";
 
@@ -8,6 +15,7 @@ const initState = {
   isError: false,
   products: [],
   cartProducts: [],
+  totalPrice: 0,
 };
 
 export const reducer = (state = initState, { type, payload }) => {
@@ -15,14 +23,11 @@ export const reducer = (state = initState, { type, payload }) => {
     case GET_DATA:
       return {
         ...state,
-        isLoading: false,
-        isError: false,
         products: payload,
       };
     case ERROR_DATA:
       return {
         ...state,
-        isLoading: false,
         isError: true,
         products: [],
       };
@@ -30,14 +35,11 @@ export const reducer = (state = initState, { type, payload }) => {
       return {
         ...state,
         isLoading: true,
-        isError: false,
         products: [],
       };
     case SORT_DATA:
       return {
         ...state,
-        isLoading: false,
-        isError: false,
         products: state.products.sort((a, b) => {
           if (payload == "htol") {
             return b.Price - a.Price;
@@ -49,24 +51,29 @@ export const reducer = (state = initState, { type, payload }) => {
     case FILTER_DATA:
       return {
         ...state,
-        isLoading: false,
-        isError: false,
         products: state.products.filter((e) => e.type == payload),
       };
-      case CART_DATA:
-        return{
-          ...state,
-          isLoading: false,
-          isError: false,
-          cartProducts: payload,
-        }
-        case Delete_DATA:
-          return{
-            ...state,
-            isLoading: false,
-            isError: false,
-            cartProducts: state.cartProducts.filter((e) => e.id !== payload)
-          }
+    case CART_DATA:
+      return {
+        ...state,
+        cartProducts: payload,
+        totalPrice: payload.reduce((accumulator, currentValue) => {
+          return accumulator + currentValue.Price;
+        }, 0),
+      };
+    case Delete_DATA:
+      return {
+        ...state,
+        cartProducts: state.cartProducts.filter((e) => e.id !== payload),
+      };
+    case EDIT_DATA:
+      return {
+        ...state,
+        totalPrice: payload.reduce((accumulator, currentValue) => {
+          return accumulator + currentValue.Price * currentValue.quantity;
+        }, 0),
+      };
+
     default:
       return state;
   }

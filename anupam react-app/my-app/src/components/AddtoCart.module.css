@@ -2,6 +2,7 @@
 .cartContainer{
     
     margin-left: 17%;
+    margin-top: 50px;
 }
 .qty{
     border: none;
@@ -30,4 +31,31 @@
     width: 100px;
     margin-top: 49px;
     margin-right: 20px;
+}
+.headerpic{
+    height: 120px;
+    width: 410px;
+}
+.blue{
+    height: 20px;
+    width: 70%;
+    background-color: rgb(2,83,148);
+    margin-left: 16%;
+    margin-top: 50px;
+}
+.apply{
+background-color: rgb(0,161,224);
+color: white;
+border: none;
+height: 40px;
+width: 140px;
+border-radius: 5px;
+margin-left: 10px;
+}
+.inputcoupon{
+    height: 29px;
+}
+.selectTag{
+    height: 40px;
+    width: 230px; 
 }

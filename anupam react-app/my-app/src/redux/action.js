@@ -6,6 +6,7 @@ export const SORT_DATA = "SORT_DATA";
 export const FILTER_DATA = "FILTER_DATA";
 export const CART_DATA = "CART_DATA";
 export const Delete_DATA = "Delete_DATA";
+export const EDIT_DATA = "EDIT_DATA";
 
 export const getProductsData = (dispatch) => {
   dispatch(requestData());
@@ -43,9 +44,29 @@ export const addProducts = async (img, name, subname, Price,type) => {
       subname,
       Price,
       type,
+      "quantity":1,
     }),
   });
 };
+
+export const editData = async (dispatch,value,id) => {
+       let r = await fetch(`http://localhost:8080/cart/${id}`,{
+         method: "PATCH",
+         headers: { "content-type": "application/json" },
+         body: JSON.stringify({
+           "quantity":value,
+         }),
+  });
+  let res = await fetch("http://localhost:8080/cart");
+  let data = await res.json();
+  console.log(data);
+  dispatch({
+    type: EDIT_DATA,
+    payload: data,
+    
+  })
+};
+
 
 export const requestData = () => ({
   type: REQUEST_DATA,
