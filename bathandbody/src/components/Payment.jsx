@@ -31,20 +31,7 @@ const Payment = () => {
   return (
     <div>
       <Progress /> 
-      {/* <div className={styles.progress}>
-        <div>
-          <p>Shipping</p>
-          <span>1</span>
-        </div>
-        <div>
-          <p>Billing</p>
-          <span>2</span>
-        </div>
-        <div>
-          <p>Review & Submit Order</p>
-          <span>3</span>
-        </div>
-      </div> */}
+    
       <div className={styles.primary}>
         <div className={styles.leftDiv}>
           <div>
