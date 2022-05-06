@@ -50,7 +50,7 @@
 .logoNameDiv {
   display: flex;
   justify-content: right;
-  padding: 10px;
+  padding:10px 100px;
 }
 .logoNameDiv > img {
   width: 350px;
@@ -65,7 +65,7 @@
   padding: 0px 30px;
 }
 .inputDiv {
-  width: 50%;
+  width:60%;
   height: 30px;
   display: flex;
   align-items: center;
@@ -94,8 +94,8 @@
 .hover:hover > .hoverDiv {
   visibility: visible;
   width: 200px;
-  top: 16%;
-  left: 75%;
+  top: 17%;
+  left: 73%;
   line-height: 1.5;
   font-size: 12px;
   background: white;
@@ -122,7 +122,7 @@ input:focus {
   box-sizing: border-box;
   background-image: url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1651571161245/images/svg-icons/UI-AddToBag.svg?yocs=o_s_");
   background-repeat: no-repeat;
-  padding: 12px;
+  padding: 10px 13px;
 }
 .changeSbar {
   margin-left: 20px;

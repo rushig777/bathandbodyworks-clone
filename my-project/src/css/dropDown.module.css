@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  box-sizing: border-box;
   padding: 0px 150px;
   border-bottom: 3px solid #e5e5e5;
 }
@@ -11,23 +12,22 @@
   padding: 0px 10px;
 }
 .optionDiv:hover {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid blue; 
 }
 .mainHovar {
+  height: 300px;
   display: flex;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   position: absolute;
   visibility: hidden;
-  box-sizing: border-box;
-  padding: 25px;
 }
 .optionDiv:hover .mainHovar {
   visibility: visible;
   position: absolute;
-  left: 0;
-  top: 23.5%;
-  width: 99.88%;
+  left:0;
+  top: 26.5%;
+  width: 100%;
 }
 .mainHovar > div {
   box-sizing: border-box;
@@ -36,7 +36,7 @@
   display: flex;
 }
 .mainHovar > div > div {
-  width: 50%;
+  width: 40%;
 }
 .listDiv {
   width: 80%;
@@ -50,7 +50,6 @@
 .listDiv:hover {
   border-left: 4px solid blue;
   color: steelblue;
-  width: 90%;
   background-color: whitesmoke;
 }
 .listDiv > img {
@@ -61,7 +60,6 @@
   line-height: 2;
   font-size: 13px;
   color: #666;
-  margin-top: -5px;
 }
 .staticDiv {
   padding: 10px;

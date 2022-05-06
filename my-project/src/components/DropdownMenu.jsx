@@ -8,12 +8,11 @@ export const Dropdown = () => {
     <div className={styles.mainDiv}>
       {data.map((el, i) => {
         return (
-          <>
-            <div className={styles.optionDiv}>
+          
+            <div  key={i} className={styles.optionDiv}>
               <p
-                onMouseOver={() => setsublist(el.list[0].sublist)}
-                onMouseOut={() => setsublist([])}
-                key={i}
+                 onMouseOver={() => setsublist(el.list[0].sublist)}
+                 onMouseOut={() => setsublist([])}
               >
                 {el.title}
               </p>
@@ -22,8 +21,8 @@ export const Dropdown = () => {
                   <div>
                     {el.list.map((el, i) => {
                       return (
-                        <>
-                          <div
+                        
+                          <div key ={i}
                             onMouseOver={() => setsublist(el.sublist)}
                             onBlur={() => setsublist([])}
                             className={styles.listDiv}
@@ -38,7 +37,6 @@ export const Dropdown = () => {
                               ""
                             )}
                           </div>
-                        </>
                       );
                     })}
                   </div>
@@ -55,7 +53,6 @@ export const Dropdown = () => {
                 </div>
               </div>
             </div>
-          </>
         );
       })}
     </div>

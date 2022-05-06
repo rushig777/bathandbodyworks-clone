@@ -12,7 +12,8 @@ export const Navbar = () => {
         <div>
           <p>Limited time only! </p>
           <h3>$40 SPRING GIFT BUNDLE WITH $40 ORDER</h3>
-          <Link to={"/"}>DETAILS</Link>
+          {/* <Link to={"/"}>DETAILS</Link> */}
+          <p> DETAILS</p>
         </div>
       </div>
 
@@ -23,7 +24,8 @@ export const Navbar = () => {
             alt=""
           />
           <h5>PICK UP IN STORE</h5>
-          <Link to={"/"}>Set Store</Link>
+          {/* <Link to={"/"}>Set Store</Link> */}
+          <p>Set Store</p>
         </div>
       </div>
       <div className={styles.logoNameDiv}>
