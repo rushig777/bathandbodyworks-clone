@@ -1,0 +1,128 @@
+{
+  "Title": [
+    {
+      "title": "NEW & NOW",
+      "list": [
+        {
+          "listTitle": "NEW & NOW",
+          "sublist": [
+            "New Arrivals",
+            "Men's Shop",
+            "Laundry Fragrances",
+            "Best Sellers",
+            "Aromatherapy Shop"
+          ]
+        },
+        {
+          "listTitle": "EXPLORE NEW & NOW",
+          "sublist": []
+        }
+      ],
+      "staticData": ["Shop By Fragrance"]
+    },
+    {
+      "title": "MEN'S",
+      "list": [
+        {
+          "listTitle": "THE MEN'S SHOP",
+          "sublist": [
+            "All Men's Body Care",
+            "Moisturizers",
+            "Body Spray & Cologne",
+            "Home Fragrance",
+            " Hand Soaps & Sanitizers"
+          ]
+        },
+        {
+          "listTitle": "EXPLORE MEN'S",
+          "sublist": []
+        }
+      ],
+      "staticData": ["Get Inspired Shop By Fragrance"]
+    },
+    {
+      "title": "BODY CARE",
+      "list": [
+        {
+          "listTitle": "FEATURED",
+          "sublist": ["New Body Care", "Retired Fragrances", "Travel Size"]
+        },
+        {
+          "listTitle": "BATH & SHOWER",
+          "sublist": [
+            "All Bath & Shower",
+            "Body Wash & Shower Gel",
+            "Bubble Bath",
+            "Bar Soap",
+            "Bath Accessories"
+          ]
+        }
+      ],
+      "staticData": [
+        "BODY CARE OFFERS",
+        "Buy 3, Get 3 Free All Full-Size Body Care",
+        "Buy 2, Get 1 Free Travel, Hand & Lip Care"
+      ]
+    },
+    {
+      "title": "HAND SOAPS & SANITIZERS ",
+      "list": [
+        {
+          "listTitle": "NEW & NOW",
+          "sublist": [
+            "New Arrivals",
+            "Men's Shop",
+            "Laundry Fragrances",
+            "Best Sellers",
+            "Aromatherapy Shop"
+          ]
+        },
+        {
+          "listTitle": "EXPLORE NEW & NOW",
+          "sublist": ["Best Sellers", "Aromatherapy Shop"]
+        }
+      ],
+      "staticData": ["Get Inspired", "Shop By Fragrance"]
+    },
+    {
+      "title": "GIFTS",
+      "list": [
+        {
+          "listTitle": "NEW & NOW",
+          "sublist": [
+            "New Arrivals",
+            "Men's Shop",
+            "Laundry Fragrances",
+            "Best Sellers",
+            "Aromatherapy Shop"
+          ]
+        },
+        {
+          "listTitle": "EXPLORE NEW & NOW",
+          "sublist": ["Best Sellers", "Aromatherapy Shop"]
+        }
+      ],
+      "staticData": ["Get Inspired", "Shop By Fragrance"]
+    },
+    {
+      "title": "TOP OFFERS",
+      "list": [
+        {
+          "listTitle": "NEW & NOW",
+          "sublist": [
+            "New Arrivals",
+            "Men's Shop",
+            "Laundry Fragrances",
+            "Best Sellers",
+            "Aromatherapy Shop"
+          ]
+        },
+        {
+          "listTitle": "EXPLORE NEW & NOW",
+          "sublist": ["Best Sellers", "Aromatherapy Shop"]
+        }
+      ],
+      "staticData": ["Get Inspired", "Shop By Fragrance"]
+    }
+  ]
+}

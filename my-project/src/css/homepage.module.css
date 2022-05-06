@@ -1,0 +1,13 @@
+.itemDiv {
+  border: 1px solid;
+  width: 50px;
+}
+.hoverDiv {
+  border: 1px solid;
+  width: 100px;
+  display: none;
+}
+.itemDiv:hover + .hoverDiv {
+  display: block;
+  background-color: blueviolet;
+}

@@ -1,0 +1,71 @@
+.mainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 150px;
+  border-bottom: 3px solid #e5e5e5;
+}
+.optionDiv {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0px 10px;
+}
+.optionDiv:hover {
+  border-bottom: 3px solid blue;
+}
+.mainHovar {
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: absolute;
+  visibility: hidden;
+  box-sizing: border-box;
+  padding: 25px;
+}
+.optionDiv:hover .mainHovar {
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 23.5%;
+  width: 99.88%;
+}
+.mainHovar > div {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 40%;
+  display: flex;
+}
+.mainHovar > div > div {
+  width: 50%;
+}
+.listDiv {
+  width: 80%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 10px;
+}
+.listDiv:hover {
+  border-left: 4px solid blue;
+  color: steelblue;
+  width: 90%;
+  background-color: whitesmoke;
+}
+.listDiv > img {
+  width: 15px;
+  height: 15px;
+}
+.sublist {
+  line-height: 2;
+  font-size: 13px;
+  color: #666;
+  margin-top: -5px;
+}
+.staticDiv {
+  padding: 10px;
+  border-left: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
