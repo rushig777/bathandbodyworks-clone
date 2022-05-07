@@ -1,9 +1,7 @@
 {
-  "Title": [
-    {
+  "Title": [{
       "title": "NEW & NOW",
-      "list": [
-        {
+      "list": [{
           "listTitle": "NEW & NOW",
           "sublist": [
             "New Arrivals",
@@ -22,8 +20,7 @@
     },
     {
       "title": "MEN'S",
-      "list": [
-        {
+      "list": [{
           "listTitle": "THE MEN'S SHOP",
           "sublist": [
             "All Men's Body Care",
@@ -42,8 +39,7 @@
     },
     {
       "title": "BODY CARE",
-      "list": [
-        {
+      "list": [{
           "listTitle": "FEATURED",
           "sublist": ["New Body Care", "Retired Fragrances", "Travel Size"]
         },
@@ -56,6 +52,43 @@
             "Bar Soap",
             "Bath Accessories"
           ]
+        },
+        {
+          "listTitle": "MOISTURIZERS",
+          "sublist": [
+            " All Moisturizers",
+            "Body Lotion",
+            "Body Cream",
+            "Hand Cream",
+            "Lip Gloss & Balms"
+          ]
+        }, {
+          "listTitle": "FRAGRANCE",
+          "sublist": [
+
+            "All Fragrance",
+            "Body Sprays & Mists",
+            "Perfume & Cologne"
+
+          ]
+        }, {
+          "listTitle": "AROMATHERAPY",
+          "sublist": [
+            "All Aromatherapy",
+            "Body Wash & Shower Gel",
+            "Moisturizers",
+            "Mists & Sprays"
+          ]
+        },
+        {
+          "listTitle": "GIFT SETS",
+          "sublist": [
+            "Body Care Gift Set"
+          ]
+        },
+        {
+          "listTitle": "EXPLORE BODY CARE",
+          "sublist": []
         }
       ],
       "staticData": [
@@ -66,8 +99,7 @@
     },
     {
       "title": "HAND SOAPS & SANITIZERS ",
-      "list": [
-        {
+      "list": [{
           "listTitle": "NEW & NOW",
           "sublist": [
             "New Arrivals",
@@ -82,12 +114,15 @@
           "sublist": ["Best Sellers", "Aromatherapy Shop"]
         }
       ],
-      "staticData": ["Get Inspired", "Shop By Fragrance"]
+      "staticData": ["HAND SOAPS & SANITIZERS OFFERS",
+        "6/$27 or 4/$20 Hand Soaps",
+        " $8 Hand Sanitizer 5-Packs",
+        "3/$15 Hand Sanitizer Sprays"
+      ]
     },
     {
       "title": "GIFTS",
-      "list": [
-        {
+      "list": [{
           "listTitle": "NEW & NOW",
           "sublist": [
             "New Arrivals",
@@ -102,27 +137,19 @@
           "sublist": ["Best Sellers", "Aromatherapy Shop"]
         }
       ],
-      "staticData": ["Get Inspired", "Shop By Fragrance"]
+      "staticData": ["HOME FRAGRANCE OFFERS",
+        "$12.95 3-Wick Candles",
+        "5/$25 Wallflowers Fragrance Refills",
+        "2/$22 Single Wick Candles",
+        "3/$22 Room Sprays",
+        "3/$10 Car Fragrance Refills",
+        "EXPLORE HOME FRAGRANCE"
+      ]
     },
     {
       "title": "TOP OFFERS",
-      "list": [
-        {
-          "listTitle": "NEW & NOW",
-          "sublist": [
-            "New Arrivals",
-            "Men's Shop",
-            "Laundry Fragrances",
-            "Best Sellers",
-            "Aromatherapy Shop"
-          ]
-        },
-        {
-          "listTitle": "EXPLORE NEW & NOW",
-          "sublist": ["Best Sellers", "Aromatherapy Shop"]
-        }
-      ],
-      "staticData": ["Get Inspired", "Shop By Fragrance"]
+      "list": [],
+      "staticData": []
     }
   ]
 }

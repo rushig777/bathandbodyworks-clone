@@ -136,8 +136,8 @@ input:focus {
 }
 .changeSbar input {
   background-color: transparent;
-  border: 0px solid;
-  height: 50px;
+  height: 40px;
+  border: none;
   width: 100%;
   color: #ccc;
 }

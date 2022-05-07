@@ -8,7 +8,6 @@ export const Dropdown = () => {
     <div className={styles.mainDiv}>
       {data.map((el, i) => {
         return (
-          
             <div  key={i} className={styles.optionDiv}>
               <p
                  onMouseOver={() => setsublist(el.list[0].sublist)}
@@ -17,6 +16,7 @@ export const Dropdown = () => {
                 {el.title}
               </p>
               <div className={styles.mainHovar}>
+                <div>
                 <div>
                   <div>
                     {el.list.map((el, i) => {
@@ -28,7 +28,7 @@ export const Dropdown = () => {
                             className={styles.listDiv}
                           >
                             <p>{el.listTitle}</p>
-                            {el.sublist.length > 1 ? (
+                            {el.sublist.length > 0 ? (
                               <img
                                 src="https://cdn-icons-png.flaticon.com/512/709/709586.png"
                                 alt=""
@@ -48,8 +48,9 @@ export const Dropdown = () => {
                 </div>
                 <div className={styles.staticDiv}>
                   {el.staticData.map((el, i) => {
-                    return <p key={i}>{el}</p>;
+                    return <div key={i}>{el}</div>;
                   })}
+                </div>
                 </div>
               </div>
             </div>
