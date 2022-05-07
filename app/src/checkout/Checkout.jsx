@@ -9,6 +9,7 @@ function Cart (){
 }
 
 const Checkout = () => {
+    
   return (
       <>
     <div  className='cointainer'>
