@@ -58,13 +58,16 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0px 10px;
+  
 
 }
 
 .listDiv:hover {
+  width: 220px;
   border-left: 4px solid blue;
   color: steelblue;
   background-color: whitesmoke;
+  transition: width 1s;
 }
 
 .listDiv>img {
