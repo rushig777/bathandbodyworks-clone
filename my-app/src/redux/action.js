@@ -87,9 +87,13 @@ export const filterProducts = (payload) => ({
 export const deleteProd = async (dispatch, id) => {
   let r = await axios.delete(`http://localhost:8080/cart/${id}`);
   
+  let res = await fetch("http://localhost:8080/cart");
+  let data = await res.json();
+  console.log(data);
   dispatch({
     type: Delete_DATA,
-    payload: id,
-  });
+    payload: data,
+    
+  })
 };
 

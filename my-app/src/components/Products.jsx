@@ -8,7 +8,7 @@ import { filterProducts } from "../redux/action";
 
 const Products = () => {
   const { products } = useSelector((state) => state);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); 
 
   useEffect(() => {
     getProductsData(dispatch);

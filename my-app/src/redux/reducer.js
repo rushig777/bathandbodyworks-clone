@@ -58,13 +58,16 @@ export const reducer = (state = initState, { type, payload }) => {
         ...state,
         cartProducts: payload,
         totalPrice: payload.reduce((accumulator, currentValue) => {
-          return accumulator + currentValue.Price;
+          return accumulator + currentValue.Price*currentValue.quantity;
         }, 0),
       };
     case Delete_DATA:
       return {
         ...state,
-        cartProducts: state.cartProducts.filter((e) => e.id !== payload),
+        cartProducts: payload,
+        totalPrice: payload.reduce((accumulator, currentValue) => {
+          return accumulator + currentValue.Price*currentValue.quantity;
+        }, 0),
       };
     case EDIT_DATA:
       return {
