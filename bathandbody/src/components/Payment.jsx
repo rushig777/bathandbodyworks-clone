@@ -3,6 +3,8 @@ import styles from './Payment.module.css';
 import { v4 as uuid } from 'uuid';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import Progress from './Progress';
+import { Link } from 'react-router-dom';
+
 
 const Payment = () => {
   const address = {
@@ -44,7 +46,7 @@ const Payment = () => {
             <p>{address.pin}</p>
             <p>{address.phone}</p>
             <br />
-            <a href="/">Edit</a>
+            <Link to="/">Edit</Link>
           </div>
           <div>
             <h2>CONTACT INFORMATION</h2>
@@ -226,7 +228,7 @@ const Payment = () => {
                   <button className={styles.submitbtn} type="submit">
                     REVIEW ORDER
                   </button>
-                  <a href="/#">Privacy Policy</a>
+                  <Link to="/">Privacy Policy</Link>
                 </div>
               </form>
             </div>
@@ -269,7 +271,7 @@ const Payment = () => {
           <div className={styles.billing_address}>
             <div className={styles.addressedit}>
               <h2>SHIPPING ADDRESS</h2>
-              <a href="/">Edit</a>
+              <Link to="/">Edit</Link>
             </div>
             <p>{address.name}</p>
             <p>{address.address}</p>
@@ -284,7 +286,7 @@ const Payment = () => {
           <div className={styles.billing_address}>
             <div className={styles.addressedit}>
               <h2>BILLING ADDRESS</h2>
-              <a href="/">Edit</a>
+              <Link to="/">Edit</Link>
             </div>
             <p>{address.name}</p>
             <p>{address.address}</p>

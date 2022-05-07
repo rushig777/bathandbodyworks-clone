@@ -1,21 +1,21 @@
 import React from 'react';
 import styles from './Thanks.module.css';
+import { Link } from 'react-router-dom';
 
 const Thanks = () => {
     return (
-      <div>
-        <div>
+      <div className={styles.containerThanks}>
+        <div className={styles.content}>
           <h1>Thank You!</h1>
           <p>
             <strong>Please check your email</strong> for further instructions.
           </p>
 
           <p>
-            Having trouble? <a href="/">Contact us</a>
+            Having trouble? <Link to="/">Contact us</Link>
           </p>
           <p>
             <button>Continue to homepage</button>
-           
           </p>
         </div>
       </div>

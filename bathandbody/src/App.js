@@ -3,14 +3,18 @@ import './App.css';
 import Payment2 from './components/Payment2';
 import Otp from './components/Otp';
 import Thanks from './components/Thanks';
+import Payment from './components/Payment';
+
 
 
 function App() {
   return (
-    // <Payment2 />
-    // <Otp />
-    <Thanks />
- 
+    <>
+      < Payment />
+      <Payment2 />
+      <Otp />
+      <Thanks />
+    </>
   );
 }
 

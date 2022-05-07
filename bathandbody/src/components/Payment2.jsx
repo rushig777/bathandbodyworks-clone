@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
 import React from 'react';
 import Progress from './Progress';
@@ -39,7 +39,7 @@ const Payment2 = () => {
                 <p>$6.99</p>
               </div>
               <div>
-                <a href="/">Edit</a>
+                <Link to="/">Edit</Link>
               </div>
             </div>
             <div className={styles.billingdetails}>
@@ -59,7 +59,7 @@ const Payment2 = () => {
                 <p>price to paid</p>
               </div>
               <div>
-                <a href="/">Edit</a>
+                <Link to="/">Edit</Link>
               </div>
             </div>
             <div>
@@ -69,7 +69,7 @@ const Payment2 = () => {
                 return <div key={uuid()}>item:{item}</div>;
               })}
               <hr />
-              <div className={styles.endsubmitbtn }>
+              <div className={styles.endsubmitbtn}>
                 <button>SUBMIT ORDER</button>
               </div>
             </div>

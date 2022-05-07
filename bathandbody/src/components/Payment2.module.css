@@ -16,25 +16,25 @@
     color: white;
 }
 
-.shippingdeatails {
+.mainUpperDiv .shippingdeatails {
     display: flex;
     justify-content: space-between;
     border: 1px solid rgb(210, 198, 198);
     margin-bottom: 10px;
-    padding:10px;
+    padding: 10px;
     border-radius: 4px;
 }
 
-.leftright {
+.mainUpperDiv .leftright {
     display: flex;
     /* justify-content:space-between; */
     margin-top: 20px;
     gap: 50px;
     font-weight: 300;
-   
+
 }
 
-.price_deatails {
+.mainUpperDiv .price_deatails {
     display: flex;
     justify-content: space-between;
 }
@@ -45,11 +45,11 @@
 
 }
 
-.leftdiv {
+.mainUpperDiv .leftdiv {
     width: 60%;
 }
 
-.billingdetails {
+.mainUpperDiv .billingdetails {
     display: flex;
     justify-content: space-between;
     border: 1px solid rgb(210, 198, 198);
@@ -57,25 +57,32 @@
     margin-bottom: 10px;
     border-radius: 2px;
 }
-.paymentsummary{ 
-    background:#F2F2F2;
-    height:fit-content;
-    padding:12px;
+
+.mainUpperDiv .paymentsummary {
+    background: #F2F2F2;
+    height: fit-content;
+    padding: 12px;
 }
-.endsubmitbtn{ 
-/* width:30%; */
-margin:auto;
-margin-left: 300px;
-margin-top: 30px;
+
+.endsubmitbtn {
+    /* width:30%; */
+    margin: auto;
+    margin-left: 300px;
+    margin-top: 30px;
 }
-.endsubmitbtn>button{
-padding:10px;
-background:black;
-color: white;
+
+.endsubmitbtn>button {
+    padding: 10px;
+    background: black;
+    color: white;
 }
-p{
+
+.mainUpperDiv p {
     font-size: 12px;
 }
-h4,h2, h3{
+
+.mainUpperDiv h4,
+h2,
+h3 {
     font-weight: 400;
 }

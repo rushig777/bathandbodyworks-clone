@@ -1,4 +1,4 @@
-.container{
+.containerOtp{
     width: 500px;
     margin: auto;
     text-align: center;
@@ -31,7 +31,7 @@ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2p
     text-decoration: none;
     font-size: 12px;
 }
-input{
+.inputotp input{
     padding: 7px;
     border-radius: 10px;
 }
