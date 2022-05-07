@@ -2,13 +2,13 @@
 import './App.css';
 import {Navbar} from "./components/Navbar"
 import {Footer} from "./components/Footer"
-import { Homepage } from './pages/Homepage';
+import { MainRoutes } from './MainRoutes/MainRoutes';
 
 function App() {
   return (
     <div className="App">
      <Navbar/>
-     <Homepage/>
+     <MainRoutes/>
      <Footer/>
     </div>
   );
