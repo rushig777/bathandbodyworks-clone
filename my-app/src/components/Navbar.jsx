@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "../css/navbar.module.css";
 import { Dropdown } from "./DropdownMenu";
 
 export const Navbar = () => {
   const [searchToggle, setToogle] = useState(true);
+  const {cartProducts} = useSelector((state) => state);
  let Navigate = useNavigate();
   return (
     <div className={styles.navbar}>
@@ -58,7 +60,10 @@ export const Navbar = () => {
                   <Link to={"/Profile"}>My Love-It List</Link>
                 </div>
               </div>
-              <div className={styles.cart}>0</div>
+              <Link to="/Products/cart">
+              <div className={styles.cart}>{cartProducts.length}</div>
+              </Link>
+            
             </div>
           </div>
         ) : (

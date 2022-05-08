@@ -45,7 +45,7 @@ export const Dropdown = () => {
                   </div>
                   <div className={styles.sublist}>
                     {sublist.map((el, i) => {
-                      return <Link to={"/products"} key={i}>{el}</Link>;
+                      return <Link to={"/Products"} key={i}>{el}</Link>;
                     })}
                   </div>
                 </div>
