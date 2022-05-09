@@ -92,10 +92,14 @@ export const Navbar = () => {
       ) : (
         <div className={styles.downDiv}>
           <div className={styles.product}>
+          
             {
               freshData.map((el,i)=>{
-
-               return <>< ProductsCard key={i} {...el}/></>
+               if(i<4){
+               return <div>< ProductsCard key={i} {...el}/></div>}
+               else{
+                 return<></>;
+               }
               })
             }
           </div>
