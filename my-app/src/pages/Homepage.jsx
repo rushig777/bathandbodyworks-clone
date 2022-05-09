@@ -91,8 +91,8 @@ export const Homepage = () => {
           {SLIDERDATA.map((el, i) => {
             return (
               <SwiperSlide key={i} className={styles.pro_box}>
-                <div>
-                  <img styles={{width:"100%"}} src={el} alt="" />
+                <div >
+                  <img  src={el} alt="" />
                 </div>
               </SwiperSlide>
             );

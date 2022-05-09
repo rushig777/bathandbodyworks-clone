@@ -9,7 +9,10 @@
 .locationcheck {
   color: red;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+ display: flex;
+}
+.locationcheck>div {
+  margin-left: 20px;
 }
 .locationcheck select {
   height: 20px;
@@ -20,6 +23,7 @@
   color: white;
   border-radius: 8px;
 }
+
 
 .Title_of_product {
   font-family: "TradeGothicLTStd";

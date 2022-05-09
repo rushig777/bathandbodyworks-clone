@@ -72,6 +72,9 @@ width: 100%;
    display: flex;
    flex-direction:column;
   }
+  .pro_box img{
+    width: 100%;
+   }
   .pro_box >div{
     width: 70%;
     line-height: 1;

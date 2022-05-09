@@ -14,8 +14,8 @@ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2p
 .verifybtn{
     padding: 15px;
 }
-.verifybtn>button{
-    padding: 10px 35px;
+.verify{
+    padding:10px 35px;
     background:black;
     color:white;
     border-radius: 7px;
@@ -25,7 +25,6 @@ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2p
     justify-content:center;
     place-items: center;
     gap: 5px;
-
 }
 .errorDiv>a{
     text-decoration: none;

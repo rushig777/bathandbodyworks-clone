@@ -37,7 +37,7 @@ const Otp = () => {
         </div>
         <div className={styles.verifybtn}>
           <Link to="/Products/cart/checkout/payment2/otp/thanks">
-          <button>Verify</button>
+          <button className={styles.verify}>Verify</button>
           </Link>
         
         </div>

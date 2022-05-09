@@ -5,10 +5,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { getCartData } from "../redux/action";
 import { useEffect } from "react";
 import pic from "./Screenshot 2022-05-05 231416.png";
-import { Link } from "react-router-dom";
-import pic1 from "./empty.jpg"
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Cart = () => {
+  let Nagigate =useNavigate();
   const { cartProducts, totalPrice } = useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -19,10 +20,10 @@ const Cart = () => {
   return (
     <>
     {cartProducts.length == 0 ? (
-      <div style={{textAlign:"center"}} >
-        <h2 >Cart is Empty !!!</h2>
+      <div style={{textAlign:"center",marginBottom:"20px"}} >
+       
       <p>Please Add some Products To Show Here</p>
-      <img  src={pic1} alt="" />    
+      <img  src="https://sethisbakery.com/assets/website/images/empty-cart.png" alt="" />    
       </div>
     ):(<>
 <img className={styles.headerpic} src={pic} alt="" />
@@ -87,7 +88,7 @@ const Cart = () => {
             <p style={{ marginLeft: "135px",fontWeight: "bold",fontSize:"20px" }}>${totalPrice}</p>
           </div>
           <Link to="/Products/cart/checkout">
-          <button className={styles.checkOut}>CONTINUE CHECKOUT</button>
+          <button onClick={()=>Nagigate("/Products/cart/checkout")} className={styles.checkOut}>CONTINUE CHECKOUT</button>
           </Link>
         </div>
       </div>
