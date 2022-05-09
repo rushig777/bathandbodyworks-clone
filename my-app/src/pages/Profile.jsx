@@ -25,7 +25,7 @@ export const Profile = () => {
     event.preventDefault();
     console.log("hello")
  
-  axios.post('http://localhost:8080/register', {
+  axios.post('https://reqres.in/api/register', {
     "email": mail,
     "password": password
 })
