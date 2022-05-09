@@ -69,7 +69,6 @@ export const Homepage = () => {
           })}
         </div>
       </div>
-     
       <div className={styles.Bath_Body}>
         <h3>Bath & Body Works</h3>
         <p>
