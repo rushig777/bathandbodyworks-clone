@@ -11,10 +11,6 @@ function App() {
   return (
     <div className="App">
       <SubRoutes/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <Navbar/>
       <MainRoutes/>
       <Footer/>

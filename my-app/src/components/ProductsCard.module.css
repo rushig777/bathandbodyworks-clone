@@ -31,7 +31,12 @@
     width: 195px;
     height: 39px;
     cursor: pointer;
-    
+    border: none;
+}
+.addtocart:hover{
+  border: 1px solid;
+  background-color:whitesmoke;
+  color: black;  
 }
 .heart{
     height: 30px;
