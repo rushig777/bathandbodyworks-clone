@@ -31,13 +31,15 @@ export const Profile = () => {
   });
 
   }
-  const handleSubmit=(event)=>{
+  const handleSignup=(event)=>{
+    const mail=event.target.Email.value;
+    const password= event.target.password.value;
     event.preventDefault();
     console.log("hello")
  
   axios.post('https://reqres.in/api/register', {
-    "email": "eve.holt@reqres.in",
-    "password": "pistol"
+    "email": mail,
+    "password": password
 })
   .then(function (response) {
     console.log(response);
@@ -116,7 +118,7 @@ export const Profile = () => {
           <div className={styles.titleDiv}>Create an Account</div>
           <div className={styles.signupDiv}>
             
-            <form  onSubmit={(e) => handleSubmit(e)}>
+            <form  onSubmit={(e) => handleSignup(e)}>
               {data.map((el,i) => {
                 return (
                   <div key={i}>
