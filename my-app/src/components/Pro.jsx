@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
 import styled from "styled-components";
 import "./pro.css";
 import { useEffect } from "react";
@@ -87,7 +87,7 @@ function Pro() {
               </select>
             </div>
             <div>
-              <button className="Add_To_Cart">ADD TO CART</button>
+              <Link to={"/Products/cart"}><button className="Add_To_Cart">ADD TO CART</button></Link>
             </div>
           </div>
           <p className="instock">In Stock</p>
