@@ -1,5 +1,6 @@
 import styles from "../css/profile.module.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import React, { useState } from "react";
 import signupData from "../data/signup.json";
 export const Profile = () => {
@@ -15,6 +16,24 @@ export const Profile = () => {
       setInputType("text");
     }
   };
+  const handleSubmit=(event)=>{
+    event.preventDefault();
+    let data ={
+      "email":event.target.mail.value,
+      "password":event.target.password.value
+  }
+  console.log(data)
+  axios.post('https://reqres.in/api/register', {
+    email:event.target.mail.value,
+    password:event.target.password.value
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  }
   return (
     <>
       {profile ? (
@@ -32,10 +51,10 @@ export const Profile = () => {
               <p>If you already have an account with us, sign in below</p>
               <div>
                 <label htmlFor="mail">Email Address</label>
-                <input type="text" name="mail" id="" />
+                <input type="text" name="mail" id="mail" />
                 <label htmlFor="password">Password</label>
                 <div className={styles.passDiv}>
-                  <input type={inpuType} name="password" id="" />
+                  <input type={inpuType} name="password" id="password" />
                   {toggle ? (
                     <div onClick={() => handleClick(false)}>SHOW</div>
                   ) : (
@@ -85,19 +104,19 @@ export const Profile = () => {
           </div>
           <div className={styles.titleDiv}>Create an Account</div>
           <div className={styles.signupDiv}>
-            <form>
+            <form onSubmit={(event)=>handleSubmit(event)}>
               {data.map((el,i) => {
                 return (
                   <div key={i}>
                     <label htmlFor="mail">*{el}</label>
-                    <input type="text" name="mail" id="" />
+                    <input type="text" name={el} id={el} />
                   </div>
                 );
               })}
               <div>
               <label htmlFor="password">*Password</label>
               <div className={styles.passDiv}>
-                <input type={inpuType} name="password" id="" />
+                <input type={inpuType} name="password" id="password" />
                 {toggle ? (
                   <div onClick={() => handleClick(false)}>SHOW</div>
                 ) : (
@@ -105,10 +124,10 @@ export const Profile = () => {
                 )}
               </div>
               </div>
-              <input
+              <input  type="button"
                 onClick={() => setProfile(true)}
                 className={styles.btn}
-                type="submit" value="CREATE AN ACCOUNT"
+                value="CREATE AN ACCOUNT"
               />
             </form>
           </div>
