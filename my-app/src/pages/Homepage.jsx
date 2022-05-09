@@ -92,11 +92,8 @@ export const Homepage = () => {
             return (
               <SwiperSlide key={i} className={styles.pro_box}>
                 <div>
-                  <p>{el.head}</p>
-                  <p className={styles.Pro_title}>{el.text}</p>
-                  <p className={styles.pro_price}>{el.price}</p>
+                  <img styles={{width:"100%"}} src={el} alt="" />
                 </div>
-                <button className={styles.Shop_Button}>SHOP</button>
               </SwiperSlide>
             );
           })}
