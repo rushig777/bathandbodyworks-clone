@@ -6,6 +6,7 @@ import { getCartData } from "../redux/action";
 import { useEffect } from "react";
 import pic from "./Screenshot 2022-05-05 231416.png";
 import { Link } from "react-router-dom";
+import pic1 from "./empty.jpg"
 
 const Cart = () => {
   const { cartProducts, totalPrice } = useSelector((state) => state);
@@ -17,7 +18,14 @@ const Cart = () => {
 
   return (
     <>
-      <img className={styles.headerpic} src={pic} alt="" />
+    {cartProducts.length == 0 ? (
+      <div style={{textAlign:"center"}} >
+        <h2 >Cart is Empty !!!</h2>
+      <p>Please Add some Products To Show Here</p>
+      <img  src={pic1} alt="" />    
+      </div>
+    ):(<>
+<img className={styles.headerpic} src={pic} alt="" />
       <div className={styles.blue}>
         <p style={{ color: "white" }}>
           Free product to be added in the cart by the customer to avail offer
@@ -83,6 +91,11 @@ const Cart = () => {
           </Link>
         </div>
       </div>
+      </>
+    )
+  
+    }
+      
     </>
   );
 };

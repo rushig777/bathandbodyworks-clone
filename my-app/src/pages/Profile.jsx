@@ -17,7 +17,7 @@ export const Profile = () => {
     }
   };
   const handleLogin=(event)=>{
-    // const mail = event.target.
+
   }
   const handleSignup=(event)=>{
     const mail=event.target.Email.value;
@@ -76,7 +76,9 @@ export const Profile = () => {
                     />
                   </div>
                 </div>
+                <Link to="/">
                 <input type="submit" value="SIGN IN"  className={styles.btn} styles={{ width: "20px" }} />
+                </Link>
               </form>
             </div>
             <div className={styles.signup}>
