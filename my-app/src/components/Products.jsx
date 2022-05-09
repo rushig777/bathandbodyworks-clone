@@ -25,7 +25,7 @@ const Products = () => {
 
   return (
     <>
-    <Link to="/Products/cart">Cart page</Link>
+    {/* <Link to="/Products/cart">Cart page</Link> */}
     <div style={{ display: "flex" }}>
    
       <div

@@ -44,7 +44,7 @@
     border-right: 1px solid #e5e5e5;
 }
 
-.signin>div {
+.signin>form {
     text-align: left;
     width: 80%;
     margin: auto;
@@ -52,12 +52,12 @@
     flex-direction: column;
 }
 
-.signin>div input {
+.signin>form input {
     height: 30px;
     width: 92%;
 }
 
-.signin>div label {
+.signin>form label {
     margin-bottom: 5px;
     margin-top: 20px;
 }

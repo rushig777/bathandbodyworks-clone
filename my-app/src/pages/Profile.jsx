@@ -16,17 +16,29 @@ export const Profile = () => {
       setInputType("text");
     }
   };
+  const handleLogin=(event)=>{
+    event.preventDefault();
+    console.log("clicked")
+    axios.post('https://reqres.in/api/login', {
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+})
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+  }
   const handleSubmit=(event)=>{
     event.preventDefault();
-    let data ={
-      "email":event.target.mail.value,
-      "password":event.target.password.value
-  }
-  console.log(data)
+    console.log("hello")
+ 
   axios.post('https://reqres.in/api/register', {
-    email:event.target.mail.value,
-    password:event.target.password.value
-  })
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+})
   .then(function (response) {
     console.log(response);
   })
@@ -34,6 +46,7 @@ export const Profile = () => {
     console.log(error);
   });
   }
+
   return (
     <>
       {profile ? (
@@ -49,12 +62,12 @@ export const Profile = () => {
             <div className={styles.signin}>
               <h2>SIGN IN</h2>
               <p>If you already have an account with us, sign in below</p>
-              <div>
+              <form onSubmit={(e)=>handleLogin(e)}>
                 <label htmlFor="mail">Email Address</label>
                 <input type="text" name="mail" id="mail" />
                 <label htmlFor="password">Password</label>
                 <div className={styles.passDiv}>
-                  <input type={inpuType} name="password" id="password" />
+                  <input type={inpuType} name="password" id="pass" />
                   {toggle ? (
                     <div onClick={() => handleClick(false)}>SHOW</div>
                   ) : (
@@ -72,10 +85,8 @@ export const Profile = () => {
                     />
                   </div>
                 </div>
-                <div className={styles.btn} styles={{ width: "20px" }}>
-                  SIGN IN
-                </div>
-              </div>
+                <input type="submit" value="SIGN IN"  className={styles.btn} styles={{ width: "20px" }} />
+              </form>
             </div>
             <div className={styles.signup}>
               <h2>SIGN UP</h2>
@@ -104,7 +115,8 @@ export const Profile = () => {
           </div>
           <div className={styles.titleDiv}>Create an Account</div>
           <div className={styles.signupDiv}>
-            <form onSubmit={(event)=>handleSubmit(event)}>
+            
+            <form  onSubmit={(e) => handleSubmit(e)}>
               {data.map((el,i) => {
                 return (
                   <div key={i}>
@@ -124,11 +136,7 @@ export const Profile = () => {
                 )}
               </div>
               </div>
-              <input  type="button"
-                onClick={() => setProfile(true)}
-                className={styles.btn}
-                value="CREATE AN ACCOUNT"
-              />
+              <input  type="submit" className={styles.btn} value="CREATE AN ACCOUNT"/>
             </form>
           </div>
           <div className={styles.lastDiv}>
