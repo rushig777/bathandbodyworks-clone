@@ -116,6 +116,23 @@
             "text":"Travel, Hand & Lip Care",
             "price":""
         }
-    ]
+    ],
+    "searchData":[
+        "a thousand wishes",
+        "fairytale"
+        ,"honeysuckle"
+        ,"into the night"
+        ,"japanese cherry blossom"
+        ,"vanilla"
+       ,"black cherry merlot"
+      ,"champagne toast"
+     ,"in the stars",
+        "mist"],
+        "SLIDERDATA":["https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxOTUwMDIzLjc3NTE5MjEyOTA1LmpwZWc=.jpg?w=640&h=640&fit=cover",
+        "https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxOTMyMDk1Ljk5MDAzNTIzMjQuanBlZw==.jpg?w=640&h=640&fit=cover",
+        "https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxODYzNjcyLjMwNzk3NTYwNzQ3LmpwZWc=.jpg?w=640&h=640&fit=cover",
+        "https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxODQ3NDg0LjY5NDg0MzUyMDE5OC5qcGVn.jpg?w=640&h=640&fit=cover",
+    "https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxNzc3MjI4LjE3MzU2MTg1MDk2LmpwZWc=.jpg?w=640&h=640&fit=cover",
+    "https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxNzU5MjkzLjczNTgyNjUyNzEwNi5qcGVn.jpg?w=640&h=640&fit=cover","https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxNzA0MjIxLjg3MzY0Mzk5MDkwMC5qcGVn.jpg?w=640&h=640&fit=cover","https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjUxNjc1ODQyLjYzMTA5MjM1ODQ3OC5qcGVn.jpg?w=640&h=640&fit=coverf"]
 
 }

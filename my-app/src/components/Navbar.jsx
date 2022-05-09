@@ -3,8 +3,14 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "../css/navbar.module.css";
 import { Dropdown } from "./DropdownMenu";
-
+import CATEGORY from "../data/homepage.json"
+import data from "../Fresh.json"
+import ProductsCard from "./ProductsCard";
 export const Navbar = () => {
+  let Data= CATEGORY.searchData
+
+  let freshData=data;
+  console.log(freshData)
   const [searchToggle, setToogle] = useState(true);
   const {cartProducts} = useSelector((state) => state);
  let Navigate = useNavigate();
@@ -85,8 +91,27 @@ export const Navbar = () => {
         ""
       ) : (
         <div className={styles.downDiv}>
-          <div className={styles.product}></div>
-          <div className={styles.Shistory}></div>
+          <div className={styles.product}>
+          
+            {
+              freshData.map((el,i)=>{
+               if(i<4){
+               return <div>< ProductsCard key={i} {...el}/></div>}
+               else{
+                 return<></>;
+               }
+              })
+            }
+          </div>
+          <div className={styles.Shistory}>
+            <h4>   POPULAR SEARCHES</h4>
+            {Data.map((el,i)=>{
+              return <div key={i}>
+                 <img  src="https://cdn-icons-png.flaticon.com/512/7381/7381400.png" alt="" />
+                 <div>{el}</div>
+                        </div>
+            })}
+          </div>
         </div>
       )}
       <Dropdown />
