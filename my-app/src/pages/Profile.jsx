@@ -17,19 +17,7 @@ export const Profile = () => {
     }
   };
   const handleLogin=(event)=>{
-    event.preventDefault();
-    console.log("clicked")
-    axios.post('https://reqres.in/api/login', {
-    "email": "eve.holt@reqres.in",
-    "password": "pistol"
-})
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-
+    // const mail = event.target.
   }
   const handleSignup=(event)=>{
     const mail=event.target.Email.value;
@@ -37,7 +25,7 @@ export const Profile = () => {
     event.preventDefault();
     console.log("hello")
  
-  axios.post('https://reqres.in/api/register', {
+  axios.post('http://localhost:8080/register', {
     "email": mail,
     "password": password
 })
@@ -47,6 +35,7 @@ export const Profile = () => {
   .catch(function (error) {
     console.log(error);
   });
+  setProfile(true)
   }
 
   return (

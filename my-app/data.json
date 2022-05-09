@@ -650,5 +650,37 @@
       "id": 506
     }
   ],
-  "cart": []
+  "cart": [],
+  "register": [
+    {
+      "email": "anupamkumar827009@gmail.com",
+      "password": "anupam@123",
+      "id": 1
+    },
+    {
+      "email": "anupamkumar827009@gmail.com",
+      "password": "anupam@123",
+      "id": 2
+    },
+    {
+      "email": "anupamkumar827009@gmail.com",
+      "password": "anupam@123",
+      "id": 3
+    },
+    {
+      "email": "anupamkumar827009@gmail.com",
+      "password": "anupam@123",
+      "id": 4
+    },
+    {
+      "email": "anupamkumar827009@gmail.com",
+      "password": "anupam@123",
+      "id": 5
+    },
+    {
+      "email": "anupamkumar827009@gmail.com",
+      "password": "qqqq",
+      "id": 6
+    }
+  ]
 }
