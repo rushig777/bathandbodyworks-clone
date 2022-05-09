@@ -10,11 +10,11 @@ const Payment2 = () => {
   console.log(cartProducts);
   
   const address = {
-    name: 'Gajraj Singh',
-    address: 'abc',
-    city: 'puner',
-    pin: '33201',
-    phone: 9414584444,
+    name: 'Anupam Kumar',
+    address: 'Qr.no. 809',
+    city: 'Bokaro',
+    pin: '827009',
+    phone: 7903179655,
   };
   return (
     <div style={{backgroundColor:"rgb(249,249,249)"}}>

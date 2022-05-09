@@ -652,8 +652,8 @@
   ],
   "cart": [
     {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit &  Banana ",
+      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbce07eba/crop/026234484_crop.jpg?sw=500&sh=600&sm=fit&q=75",
+      "name": "Waikiki Beach Coconut",
       "subname": "3-Wick Candle",
       "Price": 24.5,
       "type": "fresh",
@@ -670,94 +670,13 @@
       "id": 2
     },
     {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit &  Banana ",
+      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbcaf3f2f/crop/026234487_crop.jpg?sw=500&sh=600&sm=fit&q=75",
+      "name": "Orange Pineapple Punch",
       "subname": "3-Wick Candle",
       "Price": 24.5,
-      "type": "fresh",
+      "type": "floral",
       "quantity": 1,
       "id": 3
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit &  Banana ",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 4
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit &  Banana ",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 5
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit &  Banana ",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 6
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw05470532/crop/026235803_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Waikiki Beach Coconut",
-      "subname": "Single Wick Candle",
-      "Price": 14.5,
-      "type": "fruity",
-      "quantity": 1,
-      "id": 7
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbce07eba/crop/026234484_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Waikiki Beach Coconut",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 8
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit &  Banana ",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 9
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbce07eba/crop/026234484_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Waikiki Beach Coconut",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 10
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbce07eba/crop/026234484_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Waikiki Beach Coconut",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 11
-    },
-    {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Passionfruit &  Banana ",
-      "subname": "3-Wick Candle",
-      "Price": 24.5,
-      "type": "fresh",
-      "quantity": 1,
-      "id": 12
     }
   ],
   "register": [

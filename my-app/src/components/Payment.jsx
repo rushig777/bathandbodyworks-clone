@@ -11,11 +11,11 @@ const Payment = () => {
   const { cartProducts, totalPrice } = useSelector((state) => state);
   console.log(cartProducts)
   const address = {
-    name: 'Gajraj Singh',
-    address: 'abc',
-    city: 'puner',
-    pin: '33201',
-    phone: 9414584444,
+    name: 'Anupam Kumar',
+    address: 'Qr.no. 809',
+    city: 'bokaro',
+    pin: '827009',
+    phone: 7903179655,
   };
   const [radiovalue, setradiovalue] = useState(true);
   const [formData,setFormData]=useState({})
