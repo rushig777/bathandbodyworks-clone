@@ -1,14 +1,20 @@
-
 import ShopCategory from "../components/Shop_Category";
 import Slider from "../components/swiper";
 import "../css/slider.css";
 import styles from "../css/homepage.module.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import CATEGORY from "../data/homepage.json";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
 export const Homepage = () => {
   let data = CATEGORY.CATEGORY;
   let Data = CATEGORY.flexData;
-  let LastData= CATEGORY.lastData
+  let LastData = CATEGORY.lastData;
+  let SLIDERDATA= CATEGORY.SLIDERDATA
   return (
     <div className={styles.homepage}>
       <div className={styles.offerImg}>
@@ -38,12 +44,9 @@ export const Homepage = () => {
         {Data.map((el, i) => {
           return (
             <div key={i}>
-              <img
-                src={el.imgurl}
-                alt=""
-              />
+              <img src={el.imgurl} alt="" />
               <h4>{el.title} </h4>
-                <Link to="/">{el.link}</Link>
+              <Link to="/">{el.link}</Link>
             </div>
           );
         })}
@@ -69,6 +72,37 @@ export const Homepage = () => {
           })}
         </div>
       </div>
+
+      <div>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          slidesPerGroup={4}
+          loop={true}
+          loopFillGroupWithBlank={false}
+          pagination={{
+            clickable: true,
+          }}
+          style={{ width: "85%" }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className={styles.mySwiper}
+        >
+          {SLIDERDATA.map((el, i) => {
+            return (
+              <SwiperSlide key={i} className={styles.pro_box}>
+                <div>
+                  <p>{el.head}</p>
+                  <p className={styles.Pro_title}>{el.text}</p>
+                  <p className={styles.pro_price}>{el.price}</p>
+                </div>
+                <button className={styles.Shop_Button}>SHOP</button>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+
       <div className={styles.Bath_Body}>
         <h3>Bath & Body Works</h3>
         <p>
