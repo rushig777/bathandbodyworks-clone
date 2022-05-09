@@ -17,23 +17,7 @@ export const Profile = () => {
     }
   };
   const handleLogin=(event)=>{
-<<<<<<< HEAD
     // const mail = event.target.
-=======
-    event.preventDefault();
-    console.log("clicked")
-    axios.post('https://reqres.in/api/login', {
-    "email": "eve.holt@reqres.in",
-    "password": "pistol"
-})
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-
->>>>>>> parent of dce2ccf8 (check)
   }
   const handleSignup=(event)=>{
     const mail=event.target.Email.value;
@@ -41,11 +25,7 @@ export const Profile = () => {
     event.preventDefault();
     console.log("hello")
  
-<<<<<<< HEAD
-  axios.post('http://localhost:8080/register', {
-=======
   axios.post('https://reqres.in/api/register', {
->>>>>>> parent of dce2ccf8 (check)
     "email": mail,
     "password": password
 })
@@ -55,10 +35,7 @@ export const Profile = () => {
   .catch(function (error) {
     console.log(error);
   });
-<<<<<<< HEAD
   setProfile(true)
-=======
->>>>>>> parent of dce2ccf8 (check)
   }
 
   return (
