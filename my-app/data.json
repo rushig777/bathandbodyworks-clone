@@ -652,13 +652,31 @@
   ],
   "cart": [
     {
-      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6c81cafc/crop/026234486_crop.jpg?sw=500&sh=600&sm=fit&q=75",
-      "name": "Island Margarita",
+      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw350a5d13/crop/026234480_crop.jpg?sw=500&sh=600&sm=fit&q=75",
+      "name": "Waikiki Beach Coconut",
+      "subname": "Single Wick Candle",
+      "Price": 44.5,
+      "type": "fresh",
+      "quantity": "3",
+      "id": 1
+    },
+    {
+      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw07cd1806/crop/026237002_crop.jpg?sw=500&sh=600&sm=fit&q=75",
+      "name": "Waikiki Beach Coconut",
+      "subname": "Single Wick Candle",
+      "Price": 34.5,
+      "type": "fresh",
+      "quantity": "3",
+      "id": 2
+    },
+    {
+      "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbce07eba/crop/026234484_crop.jpg?sw=500&sh=600&sm=fit&q=75",
+      "name": "Waikiki Beach Coconut",
       "subname": "3-Wick Candle",
       "Price": 24.5,
-      "type": "floral",
-      "quantity": "5",
-      "id": 1
+      "type": "fresh",
+      "quantity": 1,
+      "id": 3
     },
     {
       "img": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafd2f31b/crop/026234485_crop.jpg?sw=500&sh=600&sm=fit&q=75",
