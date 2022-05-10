@@ -10,12 +10,11 @@ import Otp from "../components/Otp";
 import Thanks from "../components/Thanks";
 import { Homepage } from "../pages/Homepage";
 import { Profile } from "../pages/Profile";
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
+
 const MainRoutes = () => {
   return (
     <div>
-      <Navbar/>
+     
       <Routes>
           <Route path="/Products/cart" element={<Cart />} />
           <Route path="/Products/cart/checkout" element={<Checkout/>}/>
@@ -28,7 +27,7 @@ const MainRoutes = () => {
           <Route path="/Products" element={<Products />} />
           <Route path="/Products/:id" element={<Pro />} />
       </Routes>
-      <Footer/>
+      
     </div>
   );
 };
