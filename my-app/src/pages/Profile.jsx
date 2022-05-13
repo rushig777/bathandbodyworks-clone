@@ -55,7 +55,7 @@ export const Profile = () => {
               <p>If you already have an account with us, sign in below</p>
               <form onSubmit={(e)=>handleLogin(e)}>
                 <label htmlFor="mail">Email Address</label>
-                <input type="text" name="mail" id="mail" />
+                <input type="email" name="mail" id="mail" />
                 <label htmlFor="password">Password</label>
                 <div className={styles.passDiv}>
                   <input type={inpuType} name="password" id="pass" />
