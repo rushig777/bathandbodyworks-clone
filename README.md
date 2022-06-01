@@ -58,16 +58,16 @@ See the section about deployment for more information.
 
 **Home Page**
 
-![Logo](https://i.ibb.co/Jr8r35c/myntra3.png)
+![Logo](https://i.ibb.co/zSRmxFZ/bbd1.png)
 
 **Products  Page**
 
-![Logo](https://i.ibb.co/SRJvnBY/myntra1.png)
+![Logo](https://i.ibb.co/dcgntDV/bbd3.png)
 
 
 **login Page**
 
-![Logo](https://i.ibb.co/Np6PDh2/myntra2.png)
+![Logo](https://i.ibb.co/tKF3zZF/bbd2.png)
 
 ## Contributors  😇
 
