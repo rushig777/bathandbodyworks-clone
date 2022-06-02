@@ -38,7 +38,8 @@ See the section about deployment for more information.
 - JAVASCRIPT
 
 ## Libraries ##
--React
+- React
+- Redux
 
 ## Features ✨
 
