@@ -51,10 +51,14 @@ See the section about deployment for more information.
 
 ## Responsibilities 💪
 
-- Landing page UI consisting of megadrown navbar, carasouel, animated image cards and authentications i.e.; Login & Register 
-- Paginations for each sub-sections
-- Implementation of local storage on authentications
-- Address, payment, checkout done with using local storage concepts and raw css (No external libraries has been implemented for the same to have a effect !!)
+- Built Product page where mapped all the relevant products data.
+- Added sorts and filters on the product page.
+
+- Built the cart page and added functionalities like increase or decrease quantity 
+of products and also remove products from cart.
+
+- Made the description page and address page dynamic.
+- Linked all the pages using routes and protected routes
 
 ## Snap Shots 📷
 
